@@ -1,0 +1,10 @@
+class Solution:
+    def findDuplicate(self, nums):
+        hashmap={}
+        n=len(nums)
+        
+        for i in nums:
+            if i not in hashmap:
+                hashmap[i]=1
+            else:
+                return i
